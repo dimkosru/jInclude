@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jInclude demo page</title>
+</head>
+<body>
+    <jinclude src="header.html" ></jinclude>
+    <article>
+        <h2>How to use:</h2>
+        <ul>
+            <li>Move repeating html code in new file, for example <strong>header.html</strong></li>
+            <li>In main file, like <strong>index.html</strong>, write <br/>
+                <code>
+                    &lt;jinclude src=&quot;header.html&quot; &gt;&lt;/jinclude&gt;
+                </code>
+            </li>
+            <li>And insert jQuery and jInclude before <code>&lt;/body&gt;</code><br/>
+                <code>
+                    &lt;script src=&quot;js/lib/jquery-2.0.3.min.js&quot;&gt;&lt;/script&gt; <br/>
+                    &lt;script src=&quot;js/jinclude.js&quot;&gt;&lt;/script&gt;
+                </code>
+            </li>
+        </ul>
+        <p>It will help you to divide page on logic parts and prepare for templating.</p>
+    </article>
+    <jinclude src="footer.html" ></jinclude>
+    <script src="js/lib/jquery-2.0.3.min.js"></script>
+    <script src="js/jinclude.js"></script>
+</body>
+</html>
